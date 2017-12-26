@@ -1,6 +1,7 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Таблица для Саши CSS</title>
 		<style>
 			h1 {
@@ -12,15 +13,50 @@
 				text-align:center;
 				}
 			table{	margin:0 auto;
-					width:600;
-					
+					width:600px;
+					border-collapse:collapse;
+					border:2px solid black;
 				}
-			table,tr,td	{	
+			tr,td, th	{	
 						text-align:center;
-						border:px solid black;
+						border:2px solid black;
 						border-collapse:collapse;
+						
+						}
+			th	{
+				background:violet;				
+				}
+			a:link	{
+				color:red;
+				}
+			a:visited {
+						color:orange;
+						}
+			a:hover {
+					color:green;
+					}
+			a:active {
+						color:pink;
 						}
 			
+			td#red{
+					color:red;
+					}
+			td#green{
+					color:green;
+					}
+			td#gray{
+					color:gray;
+					}
+			td#violet{
+						color:violet;
+						}
+			td#blue{
+					color:blue;
+					}
+			td#orange{
+						color:orange;
+						}
 		</style>
 	</head>
 	<body>
@@ -28,6 +64,7 @@
 		<h2>Мой первый вложенный заголовок2</h2>
 		<div>
 		<table>
+			<tbody>
 			<tr>
 				<th></th>
 				<th>Ссылка</th>
@@ -36,12 +73,43 @@
 			</tr>
 			<tr>
 				<td>Wiki</td>
-				<td>https://ru.wikipedia.org</td>
+				<td><a href="https://ru.wikipedia.org">Ссылка1</a></td>
 				<td>1</td>
-				<td>красный</td>
+				<td id="red">красный</td>
 			</tr>
+			<tr>
+				<td>google</td>
+				<td><a href="https://www.google.com.ua">Ссылка2</a></td>
+				<td>2</td>
+				<td id="green">зеленый</td>
+			</tr>
+			<tr>
+				<td>htmlbook.ru</td>
+				<td><a href="http://htmlbook.ru">http://htmlbook.ru</a></td>
+				<td>3</td>
+				<td id="gray">серый</td>
+			</tr>
+			<tr>
+				<td>Webref.ru</td>
+				<td><a href="https://webref.ru/">https://webref.ru/</a></td>
+				<td>4</td>
+				<td id="violet">фиолетовый</td>
+			</tr>
+			<tr>
+				<td>htmlacademy.ru</td>
+				<td><a href="https://htmlacademy.ru">https://htmlacademy.ru</a></td>
+				<td>5</td>
+				<td id="blue">97</td>
+			</tr>
+			<tr>
+				<td>habrahabr.ru</td>
+				<td><a href="https://habrahabr.ru/sandbox/94597/">        https://habrahabr.ru/sandbox/94597/</a></td>
+				<td>6</td>
+				<td id="orange">оранж</td>
+			</tr>
+		</tbody>
 		</table>
-		</div>
-			
+		</div>	
+	
 	</body>
-		
+</html>
